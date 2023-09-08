@@ -138,12 +138,16 @@ export default function PlaceOrderScreen() {
                   </div>
                 </li>
                 <li>
-                  <button
-                    onClick={() => alert('Not implemented')}
-                    className="primary-button w-full"
-                  >
-                    Place Order
-                  </button>
+                  <Link href={"/"}>
+                    <button
+
+                      onClick={() => alert('Order Placed')}
+                      className="primary-button w-full"
+                    >
+
+                      Place Order
+                    </button>
+                  </Link>
                 </li>
               </ul>
             </div>
