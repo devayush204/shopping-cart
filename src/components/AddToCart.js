@@ -23,6 +23,8 @@ export default function AddToCart({
       if (existItem) {
         if (existItem.qty + 1 <= product.countInStock) {
           newQty = existItem.qty + 1
+
+//console.log("Items Added to Cart");
         } else {
           return alert('No more product exist')
         }
@@ -58,7 +60,9 @@ export default function AddToCart({
             Add to cart
           </button>
         ) : (
-          <button disabled>Out of stock</button>
+          <button className="py-2 px-5 bg-red-600 rounded-xl onClick={outOfStockClicked=()={
+console.log("Out of Stock")
+}}" disabled>Out of stock</button>
         )}
       </div>
     </>
